@@ -1,0 +1,834 @@
+﻿<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <!-- meta tag -->
+        <meta charset="utf-8">
+        <title>ZO TOKEN - Farm Investments - Collect NFTs & Harvest ZO Tokens</title>
+        <meta name="description" content="ZOFI is a project to build a farm and collect limited NFTs to compete for ZO Token rewards in each season. In Version 1 the reward will be worth 1% of the total Area of the participating camps in a season.">
+        <!-- responsive tag -->
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- favicon -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png">
+        <!-- Bootstrap v4.4.1 css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+        <!-- animate css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+        <!-- magnific css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
+        <!-- owl.carousel css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
+        <!-- off canvas css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/off-canvas.css">
+        <!-- flaticon css  -->
+        <link rel="stylesheet" type="text/css" href="assets/css/ico-moon-fonts.css">
+        <!--Slick Slider CSS -->
+        <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+        <link rel="stylesheet" href="assets/css/slick-theme.min.css">
+        <!-- spacing css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/sc-spacing.css">
+        <!-- style css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <!-- responsive css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    </head>
+    <body>
+        <!--Preloader area start here-->
+        <section class="loader_first">
+            <div class="circular-spinner"><img src="assets/images/icons/logo_zo.png" alt="Staking" class="img-fluid"></div>
+        </section>
+        <!--Preloader area End here-->
+        <div class="HomeV4Bg">
+            
+        </div>
+        <div class="homeV4Bodycontent">
+        <canvas id="canvas" class="home4FireFlyBG"></canvas>
+        
+        <div class="home_v4_body_items">
+            <!--Header Start-->
+        <header id="gamfi-header" class="gamfi-header-section transparent-header">
+            <div class="menu-area menu-sticky">
+                <div class="container">
+                    <div class="heaader-inner-area d-flex justify-content-between align-items-center">
+                        <div class="gamfi-logo-area d-flex justify-content-between align-items-center">
+                            <div class="logo">
+                                <a href="index.html"><img width="60px" height="60px" src="assets/images/logo.svg" alt="logo" /></a>
+                            </div>
+                            <div class="header-menu">
+                                <ul class="nav-menu">
+                                <li><a href="https://zotoken.net/">Home</a></li>
+                                <li><a target="_blank" href="https://bscscan.com/token/0x87d23e1bcfb01a1d721627d2d9a8e5fd0c639999">Contract</a></li>
+                                <li><a target="_blank" href="https://whitepaper.zotoken.net/">Whitepaper</a></li> 
+                            </ul>
+                            </div>
+                        </div>
+                        <div class="gamfi-btn-area">
+                            <ul>
+                                <li>
+                                    <a id="nav-expander" class="nav-expander bar" href="#">
+                                        <div class="bar">
+                                            <span class="dot1"></span>
+                                            <span class="dot2"></span>
+                                            <span class="dot3"></span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Canvas Mobile Menu start -->
+            <nav class="right_menu_togle mobile-navbar-menu" id="mobile-navbar-menu">
+                <div class="close-btn">
+                    <a id="nav-close2" class="nav-close">
+                        <div class="line">
+                            <span class="line1"></span>
+                            <span class="line2"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="sidebar-logo mb-30">
+                    <a href="index.html"><img src="assets/images/logo-dark.png" alt=""></a>
+                </div>
+                <ul class="nav-menu">
+                <li class="current-menu-item"><a href="https://zotoken.net/">Home</a></li>
+                <li><a href="https://bscscan.com/token/0x87d23e1bcfb01a1d721627d2d9a8e5fd0c639999">Contract</a></li>
+                <li><a href="https://whitepaper.zotoken.net/">Whitepaper</a></li>
+            </ul>
+            </nav>
+            <!-- Canvas Menu end -->
+        </header>
+        <!--Header End-->
+
+        <!-- Banner Section Start -->
+        <div id="sc-banner" class="sc-banner banner-bg position-relative">
+            <div class="container">
+                <div class="banner-content text-center">
+                    <h1 class="banner-title wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.7s">
+                        ZOFI  <span class="version">Version 1</span> <br />Build - Collect - Harvest
+                    </h1>
+                    <div class="description wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.7s">
+                        Earn ZO Tokens weekly by participating in the ZOFI Farm.
+                    </div>
+                    <a class="banner-btn wow fadeInUp black-shape-big" data-wow-delay="0.4s" data-wow-duration="0.7s" href="https://zofi.app">
+                        <span class="btn-text">Launch APP</span>
+                        <span class="hover-shape1"></span>
+                        <span class="hover-shape2"></span>
+                        <span class="hover-shape3"></span>
+                    </a>
+                    <a class="banner-btn swap wow fadeInUp black-shape-big" data-wow-delay="0.4s" data-wow-duration="0.7s" target="_blank" href="https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0x87d23E1bcfB01a1d721627D2d9A8e5fD0C639999">
+                        <span class="btn-text">SWAP ZO TOKEN</span>
+                        <span class="hover-shape1"></span>
+                        <span class="hover-shape2"></span>
+                        <span class="hover-shape3"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Banner Section End -->
+                   
+    <div class="RoadMapV2_section main-project-area">
+             
+            <!-- Tied Start -->
+            <div class="gamfi_TierV3_Sect Home_4_gamfi_TierV3_Sect" id="features">
+                <div class="container">
+                    <div class="sec-heading mb-60">
+                        <div class="sub-inner mb-15">
+                            <span class="sub-title">FEATURES</span>
+                            <img class="heading-left-image" src="assets/images/icons/steps.png" alt="Steps-Image">
+                        </div>
+                        <h2 class="title">Key Points</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="TvlSect mt-70">
+                                <div class="TvlHeadings">
+                                    <h2>Compare </h2>
+                                    <h3>models</h3>
+                                </div>
+                                <div class="TvlList">
+                                    <ul>
+                                        <li>Annual Percentage Yield (APY)</li>
+                                        <li>Duration Return Profit</li>
+                                        <li>Duration Payback</li>
+                                        <li>Capital Volatilization</li>
+                                        <li>Capital is StableCoin</li>
+                                        <li class="m-0">Profit is Growth Asset</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="TvlRightSect">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="TvlRightCard">
+                                            <div class="TvlRightCardHeadings TvlRightCardHeadings1">
+                                                <span><img src="assets/images/icons/Tier3.png" alt="Staking" class="img-fluid"></span>
+                                                <h3>Staking</h3>
+                                            </div>
+                                            <div class="TvlRightCardContent">
+                                                <ul>
+                                                    <li>-</li>
+                                                    <li>-</li>
+                                                    <li>-</li>
+                                                    <li>High</li>
+                                                    <li><img src="assets/images/icons/X_icon.svg" alt="X" class="img-fluid"></li>
+                                                    <li class="no-border"><img src="assets/images/icons/tick_icon.svg" alt="X" class="img-fluid"></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="TvlRightCard">
+                                            <div class="TvlRightCardHeadings TvlRightCardHeadings2">
+                                                <span><img src="assets/images/icons/crow-front-color.png" alt="Game-fi" class="img-fluid"></span>
+                                                <h3>Game-fi</h3>
+                                            </div>
+                                            <div class="TvlRightCardContent">
+                                                <ul>
+                                                    <li>-</li>
+                                                    <li>-</li>
+                                                    <li>-</li>
+                                                    <li>High</li>
+                                                    <li><img src="assets/images/icons/X_icon.svg" alt="X" class="img-fluid"></li>
+                                                    <li class="no-border"><img src="assets/images/icons/tick_icon.svg" alt="X" class="img-fluid"></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="TvlRightCard">
+                                            <div class="TvlRightCardHeadings TvlRightCardHeadings3">
+                                                <span><img src="assets/images/icons/Tier1.png" alt="ZOFI" class="img-fluid"></span>
+                                                <h3>ZOFI v1</h3>
+                                            </div>
+                                            <div class="TvlRightCardContent">
+                                                <ul>
+                                                    <li>0.10% - Ultimate</li>
+                                                    <li>Flexible</li>
+                                                    <li>Flexible</li>
+                                                    <li>Very Low</li>
+                                                    <li><img src="assets/images/icons/tick_icon.svg" alt="X" class="img-fluid"></li>
+                                                    <li class="no-border"><img src="assets/images/icons/tick_icon.svg" alt="X" class="img-fluid"></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Tied End -->
+<!-- RoadMapV2 Section Start -->
+    <div class="container">
+        <div class="sec-inner align-items-center d-flex justify-content-between mb-30" id="roadmaps">
+            <div class="sec-heading">
+                <div class="sub-inner mb-15">
+                    <span class="sub-title">Our Goals</span>
+                    <img class="heading-left-image" src="assets/images/icons/steps.png" alt="Steps-Image">
+                </div>
+                <h2 class="title">ROADMAPs</h2>
+            </div>
+        </div>
+        
+        <div class="RoadMapV2_TabContentSect">
+            <div class="RoadMapShape">
+                <img src="assets/images/bg/roadMap_Line.svg" alt="" class="img-fluid">
+            </div>       
+            <div id="RoadmapV2_2022" class="tabcontent animate_opacity">
+                <div class="RoadmapV2TabContent RoadmapV2TabContent_2022">
+                    <div class="RoadMapSilkSliderSection">
+                       <div class="row m-0 slickSlider_2022">
+                           <div class="col-md-12">
+                               <div class="RoadMapContents">
+                                   <h3>Q1 2022</h3>
+                                   <div class="RoadmapListSect">
+                                       <div class="CheckIconBg"><img src="assets/images/icons/roadmapChackicon.svg" alt="" class="img-fluid"></div>
+                                       <ul>
+                                           <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Seed Sale</li>
+                                           <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Create Operation model</li>
+                                           <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Work assignment</li>
+                                           <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Research for ZOFI v1</li>
+                                           <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Create Smart Contract</li>
+                                           <li class="m-0"><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Create Front-end</li>
+                                       </ul>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-md-12">
+                               <div class="RoadMapContents">
+                                   <h3>Q2 2022</h3>
+                                   <div class="RoadmapListSect">
+                                       <div class="CheckIconBg"><img src="assets/images/icons/roadmapChackicon.svg" alt="" class="img-fluid"></div>
+                                       <ul>
+                                           <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Research for ZOFI v1</li>
+                                           <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Create Smart Contract</li>
+                                           <li class="m-0"><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Create Front-end</li>
+                                       </ul>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-md-12">
+                               <div class="RoadMapContents">
+                                   <h3>Q3 2022</h3>
+                                   <div class="RoadmapListSect">
+                                    <div class="CheckIconBg"><img src="assets/images/icons/roadmapChackicon.svg" alt="" class="img-fluid"></div>
+                                       <ul>
+                                           <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Create ZU Market</li>
+                                           <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Create Farm System</li>
+                                           <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Create Item System</li>
+                                           <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Create Upgrade Item System</li>
+                                           <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Create Events System</li>
+                                           <li class="m-0"><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Create ZOZU Market</li>
+                                       </ul>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-md-12">
+                               <div class="RoadMapContents">
+                                   <h3>Q4 2022</h3>
+                                   <div class="RoadmapListSect">
+                                    <div class="CheckIconBg"><img src="assets/images/icons/roadmapChackicon.svg" alt="" class="img-fluid"></div>
+                                       <ul>
+                                           <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Launch Homepage</li>
+                                           <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Connect Front-end & Smart Contract</li>
+                                           <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Launch ZU Market</li>
+                                           <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Launch Referral</li>
+                                           <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Launch Build Farm</li>
+                                           <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Launch My Farm</li>
+                                           <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Launch Register Super Farm</li>
+                                           <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Launch Inventory</li>
+                                           <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Launch Claim Rewards</li>
+                                           <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Launch Collect Items</li>
+                                           <li class="m-0"><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Launch Upgrade Items</li>
+                                       </ul>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-md-12">
+                            <div class="RoadMapContents">
+                                <h3>Q1 2023</h3>
+                                <div class="RoadmapListSect">
+                                    <div class="CheckIconBg"><img src="assets/images/icons/roadmapChackicon.svg" alt="" class="img-fluid"></div>
+                                    <ul>
+                                        <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Deployment Testnet</li>
+                                        <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Marketing campaign phase 1</li>
+                                        <li class="m-0"><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Deployment Mainnet</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="RoadMapContents">
+                                <h3>Q2 2023</h3>
+                                <div class="RoadmapListSect">
+                                    <div class="CheckIconBg"><img src="assets/images/icons/roadmapChackicon.svg" alt="" class="img-fluid"></div>
+                                    <ul>
+                                        <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Operating and paying interest</li>
+                                        <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Unlock tokens based on earnings</li>
+                                        <li class="m-0"><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Keep the operation progress</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="RoadMapContents">
+                                <h3>Q3 2023</h3>
+                                <div class="RoadmapListSect">
+                                    <div class="CheckIconBg"><img src="assets/images/icons/roadmapChackicon.svg" alt="" class="img-fluid"></div>
+                                    <ul>
+                                        <li class="m-0"><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Research to expand the feature</li>
+                                        <li class="m-0"><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Run interest payment activities</li>
+                                        <li class="m-0"><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Engage the community</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="RoadMapContents">
+                                <h3>Q4 2023</h3>
+                                <div class="RoadmapListSect">
+                                    <div class="CheckIconBg"><img src="assets/images/icons/roadmapChackicon.svg" alt="" class="img-fluid"></div>
+                                    <ul>
+                                        <li class="m-0"><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Roll out upcoming features</li>
+                                        <li><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Research Marketplace on Testnet</li>
+                                        <li class="m-0"><span><img src="assets/images/kycimg/RMcheckicon.svg" alt="" class="img-fluid"></span>Create multilingual version</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="RoadMapContents">
+                                <h3>Q1 2024</h3>
+                                <div class="RoadmapListSect">
+                                    <div class="CheckIconBg"><img src="assets/images/icons/roadmapChackicon.svg" alt="" class="img-fluid"></div>
+                                    <ul>
+                                        <li><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid"></span>Register BSC</li>
+                                        <li><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid"></span>Create Market ZOBNB</li>
+                                        <li><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid"></span>Add early stage liquidity</li>
+                                        <li><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid"></span>Marketing campaign phase 2</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="RoadMapContents disable">
+                                <h3>Q2 2024</h3>
+                                <div class="RoadmapListSect">
+                                    <div class="CheckIconBg"></div>
+                                    <ul>
+                                        <li class="m-0"><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid"></span>Register to Coinmarketcap</li>
+                                        <li class="m-0"><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid"></span>Add second stage liquidity</li>
+                                        <li class="m-0"><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid"></span>Burn ZO Token annually</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="RoadMapContents disable">
+                                <h3>Q3 2024</h3>
+                                <div class="RoadmapListSect">
+                                    <div class="CheckIconBg"></div>
+                                    <ul>
+                                        <li class="m-0"><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid"></span>Add third stage liquidity</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="RoadMapContents disable">
+                                <h3>Q4 2024</h3>
+                                <div class="RoadmapListSect">
+                                    <div class="CheckIconBg"></div>
+                                    <ul>
+                                        <li class="m-0"><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid"></span>Add fourth stage liquidity</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="RoadMapContents disable">
+                                <h3>Q1 2025</h3>
+                                <div class="RoadmapListSect">
+                                    <div class="CheckIconBg"></div>
+                                    <ul>
+                                        <li class="m-0"><span><img src="assets/images/kycimg/munies.svg" alt="" class="img-fluid"></span>Will Add Soon</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="Frame1"><img src="assets/images/bg/RoadMapV2Fram.png" alt="" class="img-fluid"></span>
+    <span class="Frame2"><img src="assets/images/bg/RoadMapV2Frame2.png" alt="" class="img-fluid"></span>
+
+<!-- RoadMapV2 Section End -->
+
+        <!-- Tokenomics Section Start -->
+
+        <div class="gamfi-tokenomics-section tokenomics-left-right-shape pb-115 pt-115 md-pt-75 md-pb-45">
+            <div class="container" id="statistics">
+                <div class="sec-heading wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.4s">
+                    <div class="sub-inner mb-15">
+                        <span class="sub-title">statistics</span>
+                        <img class="heading-left-image" src="assets/images/icons/steps.png" alt="Steps-Image" />
+                    </div>
+                    <h2 class="title">ZO Tokenomics</h2>
+                </div>
+
+                <div class="V1_tokenomics_content_sect wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.4s">
+                    <div class="V1_tokenomics_content_List_Sect">
+                        <div class="V1_tokenomics_content_List V1_tokenomics_content_List_1">
+                            <div class="V1_tokenomics_content_ListText">
+                                <h4>Seed</h4>
+                                <h5><span class="counter">0.50</span>%</h5>
+                            </div>
+                            <div class="V1_tokenomics_content_ListProgress V1_tokenomics_content_ListProgress1">
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="V1_tokenomics_content_List V1_tokenomics_content_List_2">
+                            <div class="V1_tokenomics_content_ListText">
+                                <h4>Marketing</h4>
+                                <h5><span class="counter">5.50</span>%</h5>
+                            </div>
+                            <div class="V1_tokenomics_content_ListProgress V1_tokenomics_content_ListProgress2">
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="V1_tokenomics_content_List V1_tokenomics_content_List_3">
+                            <div class="V1_tokenomics_content_ListText">
+                                <h4>Team Dev</h4>
+                                <h5><span class="counter">9.00</span>%</h5>
+                            </div>
+                            <div class="V1_tokenomics_content_ListProgress V1_tokenomics_content_ListProgress3">
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="V1_tokenomics_content_List V1_tokenomics_content_List_4">
+                            <div class="V1_tokenomics_content_ListText">
+                                <h4>Event Bonus</h4>
+                                <h5><span class="counter">10.00</span>%</h5>
+                            </div>
+                            <div class="V1_tokenomics_content_ListProgress V1_tokenomics_content_ListProgress4">
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="V1_tokenomics_content_List V1_tokenomics_content_List_5">
+                            <div class="V1_tokenomics_content_ListText">
+                                <h4>Direct Liquidity</h4>
+                                <h5><span class="counter">20.00</span>%</h5>
+                            </div>
+                            <div class="V1_tokenomics_content_ListProgress V1_tokenomics_content_ListProgress5">
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="V1_tokenomics_content_List V1_tokenomics_content_List_6">
+                            <div class="V1_tokenomics_content_ListText">
+                                <h4>Hedge Fund</h4>
+                                <h5><span class="counter">25.00</span>%</h5>
+                            </div>
+                            <div class="V1_tokenomics_content_ListProgress V1_tokenomics_content_ListProgress6">
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="V1_tokenomics_content_List V1_tokenomics_content_List_7">
+                            <div class="V1_tokenomics_content_ListText">
+                                <h4>Passive Liquidity</h4>
+                                <h5><span class="counter">30.00</span>%</h5>
+                            </div>
+                            <div class="V1_tokenomics_content_ListProgress V1_tokenomics_content_ListProgress7">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="tokenomics-counter wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 mb-30">
+                            <div class="counter-info">
+                                <h4 class="counter-number mb-6"><span class="counter">200</span>M</h4>
+                                <h5>Max Supply</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-30">
+                            <div class="counter-info">
+                                <h4 class="counter-number mb-6"><span class="counter">200</span>M</h4>
+                                <h5>Circulating Supply</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-30">
+                            <div class="counter-info">
+                                <h4 class="counter-number mb-6"><span class="counter">0</span></h4>
+                                <h5>Burning</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-30">
+                            <div class="counter-info">
+                                <h4 class="counter-number mb-6">$<span class="counter">200</span>K+</h4>
+                                <h5>Market Cap</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Tokenomics Section End -->
+
+        <!-- Team Section Start -->
+
+        <div class="gamfi-team-section pt-115 pb-85 md-pt-75 md-pb-42">
+            <div class="container" id="team">
+                <div class="sec-heading text-center mb-55">
+                    <div class="sub-inner  mb-15">
+                        <img class="heading-left-image" src="assets/images/icons/steps2.png" alt="Steps-Image" />
+                        <span class="ml-10 mr-10 sub-title">Team Members</span>
+                        <img class="heading-right-image" src="assets/images/icons/steps.png" alt="Steps-Image" />
+                    </div>
+                    <h2 class="title">Meet The Crew</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="team-item text-center active-shape">
+                            <img src="assets/images/team/team-image.png" alt="Team-image" />
+                            <h4 class="team-title mb-8"><a href="https://www.linkedin.com/in/donald-trung-697b19229/">Donald Trung</a></h4>
+                            <div class="dsc">Chief Finance Officer</div>
+                            <ul class="team-icon-list">
+                                <li><a target="_blank" href="https://www.linkedin.com/in/donald-trung-697b19229/"><i class="icon-linkedin"></i></a></li>
+                            </ul>
+                            <span class="border-shadow shadow-1"></span>
+                            <span class="border-shadow shadow-2"></span>
+                            <span class="border-shadow shadow-3"></span>
+                            <span class="border-shadow shadow-4"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12">
+                        <div class="team-item text-center active-shape">
+                            <img src="assets/images/team/team-image7.png" alt="Team-image"/>
+                            <h4 class="team-title mb-8"><a href="https://www.linkedin.com/in/leonard-nguyen-717444277/">Leonard Nguyen</a></h4>
+                            <div class="dsc">Chief Technology Officer</div>
+                            <ul class="team-icon-list">
+                                <li><a target="_blank" href="https://www.linkedin.com/in/leonard-nguyen-717444277/"><i class="icon-linkedin"></i></a></li>
+                            </ul>
+                            <span class="border-shadow shadow-1"></span>
+                            <span class="border-shadow shadow-2"></span>
+                            <span class="border-shadow shadow-3"></span>
+                            <span class="border-shadow shadow-4"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12">
+                        <div class="team-item text-center active-shape">
+                            <img src="assets/images/team/team-image2.jpg" alt="Team-image" />
+                            <h4 class="team-title mb-8"><a href="https://www.linkedin.com/in/lan-hoang-326a6787/">Chloe Hoang</a></h4>
+                            <div class="dsc">Chief Marketing Officer</div>
+                            <ul class="team-icon-list">
+                                <li><a target="_blank" href="https://www.linkedin.com/in/lan-hoang-326a6787/"><i class="icon-linkedin"></i></a></li>
+                            </ul>
+                            <span class="border-shadow shadow-1"></span>
+                            <span class="border-shadow shadow-2"></span>
+                            <span class="border-shadow shadow-3"></span>
+                            <span class="border-shadow shadow-4"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Section End -->
+
+                <!-- Partner Section Start -->
+                <div class="gamfi-partner-section pb-110 md-pb-80">
+                    <div class="container">
+                        <div class="sec-heading text-center wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.4s">
+                            <div class="sub-inner mb-55">
+                                <img class="heading-right-image" src="assets/images/icons/steps2.png" alt="Steps-Image" />
+                                <span class="sub-title white-color">Our partners</span>
+                                <img class="heading-left-image" src="assets/images/icons/steps.png" alt="Steps-Image" />
+                            </div>
+                        </div>
+                        <div class="gamfi-partner-inner wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.4s">
+                            <div class="partner-image">
+                                <a href="https://bscscan.com/token/0x87d23e1bcfb01a1d721627d2d9a8e5fd0c639999" target="_blank"><img src="assets/images/partner/binanace_chain.png" alt="Binance Smart Chain" /></a>
+                                <a href="https://pancakeswap.finance/swap?outputCurrency=BNB&inputCurrency=0x87d23E1bcfB01a1d721627D2d9A8e5fD0C639999" target="_blank"><img src="assets/images/partner/partner-pancakeswap.png" alt="PancakeSwap" /></a>
+                                <a href="https://coinbrain.com/coins/bnb-0x87d23e1bcfb01a1d721627d2d9a8e5fd0c639999" target="_blank"><img src="assets/images/partner/partner-coinbrain.svg" alt="Coin Brain" /></a>
+                                <a href="https://www.geckoterminal.com/bsc/pools/0x3ba7e13f7e8771dd6b6e4ff02b795216880bfc6c" target="_blank"><img src="assets/images/partner/geckoterminal_dark.svg" alt="Geckoterminal" /></a>
+                            </div>
+                            <div class="partner-image">
+                                <a href="https://bscscan.com/token/0x87d23e1bcfb01a1d721627d2d9a8e5fd0c639999" target="_blank"><img src="assets/images/partner/binanace_chain.png" alt="Binance Smart Chain" /></a>
+                                <a href="https://pancakeswap.finance/swap?outputCurrency=BNB&inputCurrency=0x87d23E1bcfB01a1d721627D2d9A8e5fD0C639999" target="_blank"><img src="assets/images/partner/partner-pancakeswap.png" alt="PancakeSwap" /></a>
+                                <a href="https://coinbrain.com/coins/bnb-0x87d23e1bcfb01a1d721627d2d9a8e5fd0c639999" target="_blank"><img src="assets/images/partner/partner-coinbrain.svg" alt="Coin Brain" /></a>
+                                <a href="https://www.geckoterminal.com/bsc/pools/0x3ba7e13f7e8771dd6b6e4ff02b795216880bfc6c" target="_blank"><img src="assets/images/partner/geckoterminal_dark.svg" alt="Geckoterminal" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Partner Section End -->
+
+    </div>
+
+
+            <!-- Footer Section Start -->
+            <div class="gamfi-footer-section gamfi_Home4_footer_section">
+                <div class="footer-area HomeV4_FooterArea">
+                    <div class="container" id="social">
+                        <div class="sec-heading text-center">
+                            <div class="sub-inner mb-52 mb-mb-30">
+                                <img class="heading-right-image" src="assets/images/icons/steps2.png" alt="Steps-Image">
+                                <span class="sub-title white-color">Find us on Social</span>
+                                <img class="heading-left-image" src="assets/images/icons/steps.png" alt="Steps-Image">
+                            </div>
+                        </div>
+                        <div class="footer-listing text-center mb-100 md-mb-70 xs-mb-50">
+                            <ul class="footer-icon-list">
+                                <li><a href="https://discord.gg/dCTk9hW"><i class="icon-discord"></i></a></li>
+                                <li><a href="https://www.facebook.com/zotoken.net"><i class="icon-facebook"></i></a></li>
+                                <li><a href="https://t.me/ZO_Official_Channel"><i class="icon-telegram"></i></a></li>
+                                <li><a href="https://twitter.com/SocialZoToken"><i class="icon-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-logo text-center mb-45">
+                            <img width="60px" height="60px" src="assets/images/logo.svg" alt="Footer-logo">
+                        </div>
+                        <div class="footer-mainmenu text-center mb-20">
+                            <ul>
+                                <li><a href="#features">Features</a></li>
+                                <li><a href="#roadmaps">RoadMaps</a></li>
+                                <li><a href="#statistics">Statistics </a></li>
+                                <li><a href="#team">Team</a></li>
+                                <li><a href="#social">Social</a></li>
+                            </ul>
+                        </div>
+                        <div class="copyright-area text-center mb-0">
+                            <div class="dsc mb-37 md-mb-25">Copyright © 2022 - 2024</div>
+                        </div>
+                        <div class="scrollup text-center">
+                            <a href="#gamfi-header"><i class="icon-arrow_up"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Section End -->
+        </div>
+        </div>
+        <!-- home4 BG -->
+        
+        <!-- modernizr js -->
+        <script src="assets/js/modernizr-2.8.3.min.js"></script>
+        <!-- jquery latest version -->
+        <script src="assets/js/jquery.min.js"></script>
+        <!-- Bootstrap v4.4.1 js -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <!-- popup.min js -->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- imagesloaded.pkgd.min js -->
+        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+        <!-- wow js -->
+        <script src="assets/js/wow.min.js"></script>
+        
+        <!-- jquery counterup js -->
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <!-- counter top js -->
+        <script src="assets/js/waypoints.min.js"></script>
+        <!-- owl.carousel js -->
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <!-- plugins js -->
+        <script src="assets/js/plugins.js"></script>
+        <!-- Time Counter js -->
+        <script src="assets/js/time-counter.js"></script>
+        <!-- main js -->
+        <script src="assets/js/main.js"></script>
+        <!-- slickSlider js -->
+        <script src="assets/js/slick.min.js"></script>
+        <!-- Fire Flys JS -->
+        <script src="assets/js/fireflys.js"></script>
+        <script>
+            $('.slickSlider_2022').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                responsive: [{
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '0px',
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '0px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        </script>
+<!-- RoadMap Tab --> 
+              <script>
+                function openCity(evt, cityName) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(cityName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+    
+                // Get the element with id="defaultOpen" and click on it
+                document.getElementById("defaultOpen").click();
+            </script>  
+<!-- Proect Tab -->
+        <script>
+            function openProject(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("ProjectV2_tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("ProjectV2_tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("OpenProject").click();
+        </script>
+<!--RoadMapV2 Slide-->
+<script>
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: true,
+        focusOnSelect: true
+    });
+
+    $('a[data-slide]').click(function(e) {
+        e.preventDefault();
+        var slideno = $(this).data('slide');
+        $('.slider-nav').slick('slickGoTo', slideno - 1);
+    });
+</script>
+        <!-- Our Projct Tab js -->
+        <script>
+            function openProject(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("ProjectV2_tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("ProjectV2_tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("OpenProject").click();
+        </script>
+    </body>
+</html>
